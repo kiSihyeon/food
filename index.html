@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일본 여행 가이드</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: ##FFFFFF !important;
+    }
+    .bg-primary {
+      background-color: #FF0000 !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: ##FFFFFF !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: #FF0000 !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: ##FFFFFF !important;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">일본 여행 가이드 - 10403 김시현</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>일본은 동아시아의 섬나라로, 풍부한 문화유산, 첨단 기술, 아름다운 풍경으로 유명합니다. 도쿄의 번화한 거리부터 교토의 고요한 사원까지, 일본은 현대와 전통의 독특한 조화를 제공합니다.</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/일본1.jpg" class="d-block w-100" alt="일본 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/일본2.jpg" class="d-block w-100" alt="일본 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/일본3.jpg" class="d-block w-100" alt="일본 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/일본4.jpg" class="d-block w-100" alt="일본 개요 4">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/일본5.jpg" class="d-block w-100" alt="일본 개요 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">역사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/일본8.jpg" alt="일본 역사 1" class="img-fluid">
+            <p>선사시대</p>
+			
+			
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기.</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/일본7.jpg" alt="일본 역사 2" class="img-fluid">
+            <p>전국시대 </p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기.</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/일본6.jpg" alt="일본 역사 3" class="img-fluid">
+            <p>메이지 유신.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">역사 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/일본8.jpg" alt="일본 역사 1" class="img-fluid">
+          <p>구석기 시대 일본은 빙하기로 인해 한반도 및 타이완, 남중국과 육지로 연결되어 있었으며, 그 시기에 인류가 일본에 첫 발을 딛었다. 이후 해수면이 상승하면서 일본은 섬이 되었고, 일본 열도가 되었다.
+
+일본의 구석기 시대는 약 12만 년 전에 시작했다.그 시기의 유물과 화석인류는 그다지 많이 남지 않았는데, 일본은 판 경계 특성상 지각 변동이 심하다는 점, 산성 화성암 토양이기 때문에 유골이 남기 어렵다는 점이 이유로 꼽힌다.그래도 아예 없지는 않고, 드문드문 발견되는 수준.
+
+시즈오카의 화석인류인 하마키타(浜北)인, 1946년 발견된 군마의 이와주쿠(岩宿) 구석기 유적이 유명하다. 1946년까지는 일본 열도에는 구석기 문화가 존재하지 않았던 것으로 여겨졌으나, 이와주쿠에서 타제석기 유적이 발견됨으로써 일본 구석기 문화의 존재가 세상에 알려졌다.
+
+일본의 신석기 시대인 조몬 시대는 길게 보면 기원전 1만 년 경까지 거슬러 올라가지만, 청동기시대와 철기시대는 기원전 400년경을 전후로 한반도에서 유입한 도래인으로부터 급격하게 시작되었다. 도래인이 중심이 되어 시작한 기원전 400년 경부터 기원후 3세기까지의 시기를 야요이 시대라고 한다.
+
+긴 세월동안 원시 수렵 채집 생활만을 반복하고 있었던 조몬인과는 달리 야요이인은 한 단계 더 발전한 문명인 농경 문화, 금속 제련 기술을 보유한채로 일본 열도에 진출했고, 그들에 의해 일본 열도는 단기간에 매우 급격한 변화를 맞이하게 됐다. 또한, 도래인 계통의 야요이인은 현대 일본인의 혈통 비율에서 87%~96.7%를 차지한다고 한다.
+
+이후, 기타큐슈와 혼슈 서부 및 남부를 중심으로 소국들이 세워졌으며, 이합집산을 거쳐 4세기 경에는 현재의 나라현에서 미약하게나마 중앙 집권적인 체제를 갖춘 야마토 왕권이 등장하였고, 주변 소국들을 하나하나 복속시키며 외교력을 행사하기 시작하였다. 이 시기를 고훈 시대(古墳時代)라고 한다..</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">역사 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/일본7.jpeg" alt="일본 역사 2" class="img-fluid">
+          <p>무로마치 막부의 붕괴(오닌의 난) 이후 본격적인 사무라이, 다이묘들이 군웅할거의 시대에 돌입한다. 특히 전란으로 유명한 이 시대가 바로 전국시대(戰國時代). 이때의 영향이 너무 컸던 탓에 이후 일본은 이때와 직후인 에도 시대에 생겨난 생활 풍습과 문화 등에 지금까지도 곳곳에서 가장 많은 관습적 영향을 받고 있다.
+
+흔히 말하는 무사도 문화의 기원이 바로 이 시대이며 일본인들의 사회적 규범과 암묵적인 규율을 칭할때 빠지지 않는 혼네와 다테마에 문화도 이 시기를 기점으로 점차 고착화되어 갔다고 보고있다. 한국인들에게 있어서 조선시대의 예절 및 풍습을 비롯한 성리학적 문화가 여전히 사회적 관습으로 잔재되어 짙게 남아있는 것과 비슷하다고 볼 수 있다. 실제로 조선과 전국시대-에도 막부는 시기적으로도 서로 비슷하게 맞물린다.
+
+한창 전국시대였던 1543년 최초의 서양인이 일본에 발을 딛게 되는데 이들은 포르투갈의 상인들이었다. 포르투갈인들과의 교역을 통해 전국시대부터 일본은 조총을 비롯한 다양한 서양 문물을 직접 접하기 시작했다.
+
+전국시대 즈음하여 일본은 포르투갈의 철포(조총)를 도입하고 분석하여 개량했으며, 자체적으로 생산할 수 있는 체계를 갖추었다. 당시 일본의 조총 보유 수는 포르투갈과 스페인보다 많았다고 한다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">역사 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="일본6.jpeg" alt="일본 역사 3" class="img-fluid">
+          <p>천황을 드높이고, 외세를 배격한다는 존황양이(尊皇攘夷)를 명분으로 내세운 메이지 유신을 통해 에도 막부가 막을 내리고, 다시 천황에게 실권이 돌아오게 된다. 일본의 정신(혹은 고유한 것)을 바탕으로 서구의 기술을 활용한다는 화혼양재(和魂洋才)를 기본 골자로 하여 매우 빠르고 성공적인 근대화에 성공하였으며, 당시 일본은 세계열강의 반열에 들어섰다.
+
+다만 근대화 성공을 무작정 일본의 위대함, 일본의 저력 등으로 포장하는 것은 바람직한 시각이 아니고, 적극적으로 서태평양 일대를 식민화하던 미국이 남북전쟁으로 잠시 손을 뗀 시기를 놓치지 않고 잘 이용한 측면도 존재한다. 일본이 근대화를 하던 1860~70년대에 하필 서양 열강들이 남북전쟁, 그레이트 게임, 보오전쟁, 보불전쟁, 크림전쟁, 이탈리아 통일 등의 혼란상을 겪었기 때문에 일본 내정에 직접적으로 관여할 수 없었다.
+
+하지만 일본이 아무런 역량 없이 단순히 시기만 잘 타고났다고 보는 시각 역시 곤란하다. 그렇게 따지면 조선 역시 시간이 없는 건 아니었기 때문이다. 에도 막부는 이미 흑선내항 이전부터 소위 난학이라 부르던 서양의 학문을 배우는 기관을 설립하였고 농업, 상업, 무역의 발달로 부의 축적을 이루어 일개 번들이 서양군함 수척을 사들여 굴릴 정도로 근대화를 일궈낼 기초 역량이 뛰어났다. 이렇듯 일본은 19세기 중반 이전에도 근대화를 받아들일 자본적, 정신적 준비가 되어있었다. 결론적으로 일본의 근대화는 운과 실력 모두가 있었기에 가능했으며, 역량이 준비된 나라에 약간의 운과 시대적 상황도 따라주었다고 보는 시각이 객관적이다.
+
+신정부는 1869년 판적봉환과 도쿄전도, 1871년 폐번치현, 사민평등 등의 개혁을 추진하고 자유민권운동이 일어나면서 1890년에는 국회을 개설, 1889년 헌법도 제정하였다. 식산흥업정책을 표방하며 산업 발전에도 박차를 가하면서 관영 공장과 철도, 제철소 등을 세우고 은행제와 금융제를 도입하였다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/일본9.jpg" alt="일본 관광지 1" class="img-fluid">
+            <p>원폭 돔.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/일본10.jpg" alt="일본 관광지 2" class="img-fluid">
+            <p>후쿠시마 성.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/일본11.jpg" alt="일본 관광지 3" class="img-fluid">
+            <p>후쿠오카의 나카스 강변.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">관광지 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/일본9.jpg" alt="일본 관광지 1" class="img-fluid">
+          <p>원폭 돔은 본래 1915년에 건설된 일본 히로시마시의 상업전시관으로, 1945년 8월 6일 제2차 세계 대전 중 미국이 히로시마에 투하한 원자폭탄의 피해로 반파되고 남아있는 전쟁유적 중 하나이며 1996년 유네스코 세계문화유산으로 지정되었다..</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">관광지 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/일본10.jpg" alt="일본 관광지 2" class="img-fluid">
+          <p>히로시마현 히로시마시 나카구 모토정에 있는 윤곽식 평성이다. 국가 지정 사적이며, 히로시마성 전역은 히로시마 성지공원으로 정비되어 있다. 복원된 대천수는 역사박물관으로 사용되고 있다. 히로시마시 중앙공원과 인접해 있다.
+
+상당히 고풍스러워보이는 외관과는 달리 실제로는 철근 콘크리트 구조물이다..</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">관광지 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/일본11.jpg" alt="일본 관광지 3" class="img-fluid">
+          <p>후쿠오카 여행코스 중 필수로 방문해야하는
+
+나카스 포장마차거리에요.
+
+일본의 포장마차 분위기를 온전히 느낄 수 있으며
+
+다양한 먹거리 등을 만나볼 수 있답니다.
+
+특히나 옆에 강변을 따라 쭈욱 늘어진 포장마차가
+
+정말 아름답고 예쁘답니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 봄 (3월~5월)과 가을 (9월~11월).</li>
+        <li>언어: 일본어. 주요 도시에서는 영어도 사용되지만, 기본적인 일본어 구문을 배우면 도움이 됩니다.</li>
+        <li>통화: 일본 엔 (JPY).</li>
+        <li>교통: 일본은 기차, 버스, 지하철 등 광범위한 교통망을 자랑합니다. JR 패스는 장거리 여행에 매우 유용합니다.</li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qn3xgWXztUI?si=XCX0L4Z1U5lGrXGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 일본 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
